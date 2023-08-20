@@ -57,18 +57,12 @@
 
 <script setup lang="ts">
 const { width } = useWindowSize()
-
-const {
-    pending: pendingPosts,
-    postsToRemain,
-    postsFromNotion,
-    hasMore,
-    loadMore,
-} = usePosts()
-
 const route = useRoute()
+
+const { pending: pendingCategories, categories } = useCategories()
+
 const selectedCategory = computed(() => {
-    const emptyCategory = {
+    const emptyCategory: Category = {
         id: '',
         name: '',
     }
@@ -76,9 +70,20 @@ const selectedCategory = computed(() => {
     if (!route.query.category) return emptyCategory
     if (!categories.value) return emptyCategory
 
-    return categories.value.find(
-        (category) => category.id === route.query.category,
+    const resultCategory = categories.value.find(
+        (category) => category.name === route.query.category,
     )
+
+    if(!resultCategory) return emptyCategory
+
+    return resultCategory
 })
-const { pending: pendingCategories, categories } = useCategories()
+
+const {
+    pending: pendingPosts,
+    postsToRemain,
+    postsFromNotion,
+    hasMore,
+    loadMore,
+} = usePosts(selectedCategory)
 </script>

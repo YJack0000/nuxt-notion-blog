@@ -15,11 +15,11 @@
                         v-for="category in categories"
                         class="btn btn-md"
                         :class="{
-                            'btn-primary': selectedCategory.id === category.id,
-                            'btn-outline': selectedCategory.id !== category.id,
+                            'btn-primary': selectedCategory.name === category.name,
+                            'btn-outline': selectedCategory.name !== category.name,
                         }"
                         @click="
-                            router.push(`/articles?category=${category.id}`)
+                            router.push(`/articles?category=${category.name}`)
                         "
                     >
                         {{ category.name }}
@@ -52,6 +52,6 @@ const router = useRouter()
 defineProps<{
     pending: boolean,
     categories: Category[],
-    selectedCategory?: Category,
+    selectedCategory: Category,
 }>()
 </script>

@@ -48,7 +48,6 @@
                 </div>
             </div>
         </div>
-        <BlogPostPlaceholder v-else />
     </div>
 </template>
 <script setup>
