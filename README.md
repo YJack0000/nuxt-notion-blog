@@ -2,6 +2,8 @@
 
 ![GitHub](https://img.shields.io/github/license/YJack0000/nuxt-notion-blog)
 
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BetaHuhn/deploy-to-vercel-action/blob/master/LICENSE)
+
 This project is a blog built with Nuxt3 for SSR website and Notion API as a database. 
 
 The project is mainly based on [nuxt-3-notion-blog](https://github.com/egrzeszczak/nuxt-3-notion-blog). But have the newer version of Nuxt3, DaisyUI, and other dependencies. 
