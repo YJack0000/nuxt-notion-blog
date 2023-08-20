@@ -38,7 +38,7 @@
             </NuxtLink>
         </div>
         <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal p-0">
+            <ul class="menu menu-horizontal p-0 text-lg">
                 <li>
                     <NuxtLink to="/">主頁</NuxtLink>
                 </li>

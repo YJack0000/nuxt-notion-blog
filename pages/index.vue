@@ -2,10 +2,14 @@
     <div>
         <Header
             class="absolute z-10 bg-transparent align-top text-neutral-content"
+            title="YJack's blog"
         />
-        <div ref="vantaRef" class="items-top hero z-0 h-screen">
-            <div class="hero-overlay z-10 bg-opacity-60"></div>
-            <div class="hero-content z-20 text-center text-slate-50">
+        <div
+            class="hero h-screen items-top"
+            style="background-image: url(/big-pic.jpg)"
+        >
+            <div class="hero-overlay z-0 bg-opacity-60"></div>
+            <div class="hero-content z-10 text-center text-slate-50">
                 <div class="max-w-lg">
                     <h1
                         class="mb-5 text-5xl font-bold transition-opacity duration-700 ease-in"
@@ -33,9 +37,6 @@
 </template>
 
 <script setup lang="ts">
-import * as THREE from 'three'
-import WAVES from 'vanta/dist/vanta.waves.min'
-
 definePageMeta({
     layout: 'landing',
 })
@@ -48,21 +49,6 @@ setTimeout(() => {
         isContent.value = true
     }, 700)
 }, 100)
-
-const vantaRef = ref(null)
-onMounted(() => {
-    WAVES({
-        el: vantaRef.value,
-        THREE: THREE,
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-    })
-})
 </script>
 
 <style>
