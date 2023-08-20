@@ -8,8 +8,12 @@
                 <li>
                     <NuxtLink to="/articles">文章</NuxtLink>
                 </li>
-                <li>
+                <li v-if="width > 768">
                     {{ header.properties.Title.title[0].text.content }}
+                </li>
+                <li v-else>
+                    {{ header.properties.Title.title[0].text.content.slice(0, 10) }}
+                    {{ header.properties.Title.title[0].text.content.length > 10 ? '...' : '' }}
                 </li>
             </ul>
         </div>
@@ -51,6 +55,8 @@
 import Prism from 'prismjs'
 import 'assets/styles/prism-vsc-dark-plus.css'
 import 'prismjs/components/prism-typescript'
+
+const { width } = useWindowSize()
 
 onMounted(() => {
     Prism.highlightAll()

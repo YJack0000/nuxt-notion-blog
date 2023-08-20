@@ -14,7 +14,7 @@
                 alt="photo replacement of the post"
             />
             <h1
-                class="absolute bottom-0 mb-6 max-w-2xl px-8 text-white text-5xl font-bold leading-normal"
+                class="absolute bottom-0 mb-6 max-w-2xl px-8 text-white text-4xl lg:text-5xl font-bold leading-normal"
                 v-for="title in header.properties.Title[
                     header.properties.Title.type
                 ]"
