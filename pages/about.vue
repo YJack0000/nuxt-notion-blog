@@ -7,7 +7,6 @@
                 :pageLinkOptions="pageLinkOptions"
                 prism
             />
-            <BlogPostPlaceholder v-else />
         </div>
     </div>
 </template>

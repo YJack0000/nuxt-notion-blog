@@ -1,4 +1,4 @@
-# Nuxt 3 blog with Notio
+# Nuxt blog with Notion
 
 ![GitHub](https://img.shields.io/github/license/YJack0000/nuxt-notion-blog)
 

@@ -5,17 +5,31 @@ export default defineEventHandler((event) => {
     const notion = new Client({ auth: runtimeConfig.NOTION_API_KEY })
 
     const query = getQuery(event)
+
+    let criteria: any[] = [
+        {
+            property: 'Visible',
+            checkbox: {
+                equals: true,
+            },
+        },
+    ]
+
+    if (query.category && query.category !== 'undefined') {
+        criteria.push({
+            property: 'Category',
+            multi_select: {
+                contains: query.category,
+            },
+        })
+    }
+
+    console.log('criteria', criteria)
+
     const response = notion.databases.query({
         database_id: runtimeConfig.NOTION_POST_DATABASE_ID,
         filter: {
-            and: [
-                {
-                    property: 'Visible',
-                    checkbox: {
-                        equals: true,
-                    },
-                },
-            ],
+            and: criteria,
         },
         sorts: [
             {
