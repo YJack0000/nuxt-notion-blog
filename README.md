@@ -1,5 +1,7 @@
 # Nuxt 3 blog with Notion
 
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/YJack0000/nuxt-notion-blog/blob/main/LICENSE)
+
 This project is a blog built with Nuxt3 for SSR website and Notion API as a database. 
 
 The project is mainly based on [nuxt-3-notion-blog](https://github.com/egrzeszczak/nuxt-3-notion-blog). But have the newer version of Nuxt3, DaisyUI, and other dependencies. 
