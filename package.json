@@ -22,6 +22,7 @@
   "dependencies": {
     "@notionhq/client": "^2.2.11",
     "@tailwindcss/typography": "^0.5.9",
+    "@vercel/analytics": "^1.0.2",
     "@vueuse/core": "^10.3.0",
     "@vueuse/nuxt": "^10.3.0",
     "node-html-parser": "^6.1.6",
