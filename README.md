@@ -1,6 +1,6 @@
-# Nuxt 3 blog with Notion
+# Nuxt 3 blog with Notio
 
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/YJack0000/nuxt-notion-blog/blob/main/LICENSE)
+![GitHub](https://img.shields.io/github/license/YJack0000/nuxt-notion-blog)
 
 This project is a blog built with Nuxt3 for SSR website and Notion API as a database. 
 
