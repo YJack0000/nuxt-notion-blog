@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto w-[800px] max-w-full">
+    <div class="mx-auto my-4 max-w-full">
         <div class="prose text-base-content">
             <NotionRenderer
                 v-if="!pendingContent && !errorContent"
