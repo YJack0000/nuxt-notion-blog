@@ -26,7 +26,7 @@ export default defineNuxtConfig({
             link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
             charset: 'utf-8',
             viewport: 'width=device-width, initial-scale=1',
-            title: "YJack's Site.",
+            title: "YJack's blog",
             meta: [
                 {
                     name: 'description',
@@ -35,7 +35,7 @@ export default defineNuxtConfig({
                 },
                 {
                     name: 'og:title',
-                    content: "YJack's Site.",
+                    content: "YJack's blog",
                 },
                 {
                     name: 'og:description',
