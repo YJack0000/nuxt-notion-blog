@@ -1,9 +1,4 @@
 <template>
-    <div>
-        <Header
-            class="absolute z-10 bg-transparent align-top text-neutral-content"
-            title="YJack's blog"
-        />
         <div
             class="hero h-screen items-top"
             style="background-image: url(/big-pic.jpg)"
@@ -33,7 +28,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </template>
 
 <script setup lang="ts">
