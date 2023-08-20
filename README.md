@@ -8,6 +8,8 @@ The project is mainly based on [nuxt-3-notion-blog](https://github.com/egrzeszcz
 
 Moreover, I have added some features like the sitemap, category fetching, dark/light mode, and some other minor changes.
 
+[![](/docs/preview.gif)](https://yjack0000.cerana.tech/)
+
 ## Stack
 ![](https://skillicons.dev/icons?perline=15&i=nuxt,tailwind,vercel)
 

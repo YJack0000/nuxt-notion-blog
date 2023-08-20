@@ -24,8 +24,6 @@ export default defineEventHandler((event) => {
         })
     }
 
-    console.log('criteria', criteria)
-
     const response = notion.databases.query({
         database_id: runtimeConfig.NOTION_POST_DATABASE_ID,
         filter: {

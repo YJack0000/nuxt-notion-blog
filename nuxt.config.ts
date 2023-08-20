@@ -2,7 +2,7 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     modules: [
         '@nuxtjs/tailwindcss',
-        '@vueuse/nuxt'
+        '@vueuse/nuxt',
         // 'vue-notion/nuxt'
     ],
     build: {
@@ -31,7 +31,28 @@ export default defineNuxtConfig({
                 {
                     name: 'description',
                     content:
-                        '這是一個用 Nuxt.js、Tailwindcss、Notion 作為資料庫、Vercel 作為部署平台的個人網站。用來存放 YJack0000 的文章與個人資料。',
+                        '這是一個用 Nuxt.js、Tailwindcss、Notion 作為資料庫、Vercel 作為部署平台的個人網站。用來存放文章與個人資料。',
+                },
+                {
+                    name: 'og:title',
+                    content: "YJack's Site.",
+                },
+                {
+                    name: 'og:description',
+                    content:
+                        '這是一個用 Nuxt.js、Tailwindcss、Notion 作為資料庫、Vercel 作為部署平台的個人網站。用來存放文章與個人資料。',
+                },
+                {
+                    name: 'og:type',
+                    content: 'website',
+                },
+                {
+                    name: 'og:url',
+                    content: 'https://yjack0000.cerana.tech',
+                },
+                {
+                    name: 'og:image',
+                    content: '/img/og.png',
                 },
             ],
         },
