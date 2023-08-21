@@ -18,6 +18,9 @@ export default defineNuxtConfig({
         },
     },
     css: ['@/assets/styles/vue-notion-dark.css'],
+    routeRules: {
+      "/articles/post/**": { headers: { 'cache-control': `public, max-age=${3600}` } }
+    },
     app: {
         head: {
             htmlAttrs: {
