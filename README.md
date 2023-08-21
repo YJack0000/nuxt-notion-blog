@@ -16,7 +16,7 @@ Moreover, I have added some features like the sitemap, category fetching, dark/l
 ### Environment variables setup
 
 ```env
-// .env
+# .env
 NOTION_API_TOKEN=your_notion_integration_token
 NOTION_POST_DATABASE=your_notion_posts_database
 ```
