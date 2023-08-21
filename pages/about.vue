@@ -12,16 +12,17 @@
 </template>
 <script setup>
 const { $notion } = useNuxtApp()
+const { NOTION_ABOUT_PAGE, NOTION_ABOUT_PAGE_BLOCK } = useRuntimeConfig().public
 
 const {
     data: content,
     pending: pendingContent,
     error: errorContent,
 } = await useAsyncData(
-    `page_by_slug_17c6e514c9a549659e7775e5d17546b5`,
+    NOTION_ABOUT_PAGE,
     async () => {
         const blockMap = await $notion.getPageBlocks(
-            '4bc3731306444831b824c95c7a6ad868',
+            NOTION_ABOUT_PAGE_BLOCK,
         )
         if (!blockMap || blockMap.error) {
             throw createError({
