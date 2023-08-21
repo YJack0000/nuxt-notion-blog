@@ -12,8 +12,18 @@
                     {{ header.properties.Title.title[0].text.content }}
                 </li>
                 <li v-else>
-                    {{ header.properties.Title.title[0].text.content.slice(0, 10) }}
-                    {{ header.properties.Title.title[0].text.content.length > 10 ? '...' : '' }}
+                    {{
+                        header.properties.Title.title[0].text.content.slice(
+                            0,
+                            10,
+                        )
+                    }}
+                    {{
+                        header.properties.Title.title[0].text.content.length >
+                        10
+                            ? '...'
+                            : ''
+                    }}
                 </li>
             </ul>
         </div>
@@ -48,6 +58,7 @@
                 </div>
             </div>
         </div>
+        <BlogComment />
     </div>
 </template>
 <script setup>
