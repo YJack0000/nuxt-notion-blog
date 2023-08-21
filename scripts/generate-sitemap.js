@@ -44,6 +44,12 @@ console.log('Generating sitemap...')
                     <url>
                         <loc>${`https://yjack0000.cerana.tech`}</loc>
                     </url>
+                    <url>
+                        <loc>${`https://yjack0000.cerana.tech/articles`}</loc>
+                    </url>
+                    <url>
+                        <loc>${`https://yjack0000.cerana.tech/about`}</loc>
+                    </url>
         ${pages
             .map((page) => {
                 return `
