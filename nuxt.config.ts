@@ -18,6 +18,9 @@ export default defineNuxtConfig({
         },
     },
     css: ['@/assets/styles/vue-notion-dark.css'],
+    routeRules: {
+      "/articles/post/**": { headers: { 'cache-control': `public, max-age=${3600}` } }
+    },
     app: {
         head: {
             htmlAttrs: {
@@ -26,7 +29,7 @@ export default defineNuxtConfig({
             link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
             charset: 'utf-8',
             viewport: 'width=device-width, initial-scale=1',
-            title: "YJack's Site.",
+            title: "YJack's blog",
             meta: [
                 {
                     name: 'description',
@@ -35,7 +38,7 @@ export default defineNuxtConfig({
                 },
                 {
                     name: 'og:title',
-                    content: "YJack's Site.",
+                    content: "YJack's blog",
                 },
                 {
                     name: 'og:description',

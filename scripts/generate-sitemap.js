@@ -34,7 +34,8 @@ const getPageProperty = () => {
     return response
 }
 
-(async () => {
+const main = async () => {
+console.log('Generating sitemap...')
     const response = await getPageProperty()
     const pages = response.results
 
@@ -59,4 +60,6 @@ const getPageProperty = () => {
     console.log(sitemap)
 
     fs.writeFileSync('public/sitemap.xml', sitemap)
-})
+}
+
+main()
