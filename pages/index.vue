@@ -45,8 +45,3 @@ setTimeout(() => {
 }, 100)
 </script>
 
-<style>
-canvas {
-    filter: blur(3px);
-}
-</style>
