@@ -19,18 +19,5 @@ onMounted(() => {
         s.setAttribute('data-timestamp', +new Date())
         ;(d.head || d.body).appendChild(s)
     })()
-    window
-        .matchMedia('(prefers-color-scheme: dark)')
-        .addEventListener('change', ({ matches }) => {
-            if (document.readyState == 'complete') {
-                DISQUS.reset({ reload: true, config: disqus_config })
-            }
-        })
 })
 </script>
-
-<style scoped>
-#disqus_thread a {
-    background-color: #000;
-}
-</style>
