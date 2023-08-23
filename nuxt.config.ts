@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     routeRules: {
         '/': { prerender: true },
         '/about': { prerender: true },
-        "/articles/post/**": { isr: true, headers: { 'Cache-Control': `public, max-age=${3600}` } }
+        "/articles/post/**": { headers: { 'Cache-Control': `public, max-age=${60}` } }
     },
     app: {
         head: {
