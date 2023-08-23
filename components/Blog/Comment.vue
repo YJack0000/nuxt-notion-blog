@@ -7,6 +7,8 @@
 </template>
 
 <script setup lang="ts">
+const { DISQUS_PROJECT_ID } = useRuntimeConfig().public
+
 onMounted(() => {
     var disqus_config = function () {
         this.page.url = `${route.fullPath}`
@@ -15,7 +17,7 @@ onMounted(() => {
     ;(function () {
         var d = document,
             s = d.createElement('script')
-        s.src = `https://${"huan-3"}.disqus.com/embed.js`
+        s.src = `https://${DISQUS_PROJECT_ID}.disqus.com/embed.js`
         s.setAttribute('data-timestamp', +new Date())
         ;(d.head || d.body).appendChild(s)
     })()
