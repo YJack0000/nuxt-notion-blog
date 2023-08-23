@@ -48,5 +48,5 @@ npm run build
 
 ## Todo
 
-- [*] Add a comment section
+- [x] Add a comment section
 - [ ] Cache the Notion API data on vercel service 
