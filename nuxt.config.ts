@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     routeRules: {
         '/': { prerender: true },
         '/about': { prerender: true },
-        "/articles/post/**": { headers: { 'Cache-Control': `public, max-age=${60}` } }
+        "/articles/post/**": { headers: { 'Cache-Control': `public, max-age=${1800}` } }
     },
     app: {
         head: {
