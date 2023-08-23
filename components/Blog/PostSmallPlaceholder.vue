@@ -134,12 +134,6 @@
                 ></div>
             </div>
         </div>
-        <div class="hidden lg:flex col-span-1 items-center justify-center">
-            <div
-                data-placeholder
-                class="w-24 h-24 overflow-hidden relative dark:bg-[#1b2126] bg-base-200 rounded-box"
-            ></div>
-        </div>
         <div class="col-span-5 flex gap-2 items-center flex-wrap">
             <div
                 data-placeholder
