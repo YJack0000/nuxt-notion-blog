@@ -16,7 +16,8 @@ export default defineNuxtConfig({
             GITHUB_PAGE: 'https://github.com/YJack0000/nuxt-notion-blog',
             LINKEDIN_PAGE: 'https://www.linkedin.com/in/宇傑-鄭-3941181a3',
             NOTION_ABOUT_PAGE: 'page_by_slug_17c6e514c9a549659e7775e5d17546b5',
-            NOTION_ABOUT_PAGE_BLOCK: '4bc3731306444831b824c95c7a6ad868'
+            NOTION_ABOUT_PAGE_BLOCK: '4bc3731306444831b824c95c7a6ad868',
+            DISQUS_PROJECT_ID: 'huan-3',
         },
     },
     css: ['@/assets/styles/vue-notion-dark.css'],
