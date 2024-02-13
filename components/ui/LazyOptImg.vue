@@ -4,7 +4,7 @@
             :src="src"
             format="webp"
             alt="Lazy loading image"
-            lazy="loading"
+            loading="lazy"
         />
     </div>
 </template>

@@ -26,6 +26,9 @@ export default defineNuxtConfig({
     disqus: {
         shortname: process.env.NUXT_PUBLIC_DISQUS_SHORTNAME,
     },
+    // image: {
+    //     domains: ['www.notion.so']
+    // },
     routeRules: {
         '/': { prerender: true },
         '/about': { prerender: true },
