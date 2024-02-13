@@ -79,6 +79,6 @@ const publishedAtReadable = computed(() => {
 
 const NuxtLink = resolveComponent('NuxtLink')
 const pageLinkOptions = { component: NuxtLink, href: 'to' }
-const LazyLoadingImg = resolveComponent('UiLazyLoadingImg')
-const imageOptions = { component: LazyLoadingImg, src: 'src' }
+const LazyOptImg = resolveComponent('UiLazyOptImg')
+const imageOptions = { component: LazyOptImg, src: 'src' }
 </script>

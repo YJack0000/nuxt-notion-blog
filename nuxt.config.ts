@@ -4,6 +4,8 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         '@vueuse/nuxt',
         // 'vue-notion/nuxt'
+        '@nuxt/image',
+        'nuxt-disqus'
     ],
     build: {
         transpile: ['vue-notion'],
@@ -17,10 +19,13 @@ export default defineNuxtConfig({
             LINKEDIN_PAGE: 'https://www.linkedin.com/in/宇傑-鄭-3941181a3',
             NOTION_ABOUT_PAGE: 'page_by_slug_17c6e514c9a549659e7775e5d17546b5',
             NOTION_ABOUT_PAGE_BLOCK: '4bc3731306444831b824c95c7a6ad868',
-            DISQUS_PROJECT_ID: 'huan-3',
+            DISQUS_SHORTNAME: process.env.NUXT_PUBLIC_DISQUS_SHORTNAME,
         },
     },
     css: ['@/assets/styles/vue-notion-dark.css'],
+    disqus: {
+        shortname: process.env.NUXT_PUBLIC_DISQUS_SHORTNAME,
+    },
     routeRules: {
         '/': { prerender: true },
         '/about': { prerender: true },
