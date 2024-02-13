@@ -1,6 +1,6 @@
 <template>
     <div class="mx-auto max-w-4xl my-4 rounded-lg">
-        <div class="p-4 bg-white rounded-lg">
+        <div v-if="DISQUS_PROJECT_ID" class="p-4 bg-white rounded-lg">
             <div id="disqus_thread"></div>
         </div>
     </div>

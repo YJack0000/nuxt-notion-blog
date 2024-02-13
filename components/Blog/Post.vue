@@ -47,6 +47,7 @@
                 <NotionRenderer
                     :blockMap="content"
                     :pageLinkOptions="pageLinkOptions"
+                    :imageOptions="imageOptions"
                     prism
                 />
             </article>
@@ -78,4 +79,6 @@ const publishedAtReadable = computed(() => {
 
 const NuxtLink = resolveComponent('NuxtLink')
 const pageLinkOptions = { component: NuxtLink, href: 'to' }
+const LazyLoadingImg = resolveComponent('UiLazyLoadingImg')
+const imageOptions = { component: LazyLoadingImg, src: 'src' }
 </script>
