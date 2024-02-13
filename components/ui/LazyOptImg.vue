@@ -1,7 +1,8 @@
 <template>
     <div class="w-6 rounded">
-        <img
+        <NuxtImg
             :src="src"
+            format="webp"
             alt="Lazy loading image"
             lazy="loading"
         />
